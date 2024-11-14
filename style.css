@@ -14,3 +14,30 @@
 header{
     margin: 0 5%;
 }
+
+  
+  .comment-details {
+    margin-left: 4rem;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .input {
+    height: 30px;
+    border-radius: 10px;
+  }
+  
+  .btn {
+    color: white;
+    margin-left: 5px;
+    background-color: rgb(135, 135, 235);
+    border: 0px;
+    height: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+  }
+  
+  .all-comment:not(:first-child) {
+    margin-left: 4rem;
+  }

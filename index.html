@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +9,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Nested Comments</title>
 </head>
+
 <body>
     <header>
         <div class="head">
@@ -18,20 +20,36 @@
         </div>
     </header>
     <section class="py-[3%]">
-        <div class="mx-[5%]">
-            <div class="initial-comment bg-gray-100 rounded-lg p-[2%] flex space-between gap-[15px]">
-                <div><img class="rounded-[50%] w-[50px]" src="profile.jpg" alt=""></div>
-                <div>
-                    <div>
-                        <p class="text-xl font-[600]">John Doe</p>
-                        <p>Welcome! You can reply to the comments. But you can't delete the initial comment.</p>
-                    </div>
-                    <div class="mt-[2%]">
-                        <button class="border-[1px] border-black rounded-[3px] px-[5px]">Reply</button>
+        <div class="container">
+            <div id="comment-container" class="comment-container mx-[5%]">
+                <div class="all-comment">
+                    <div class="bg-gray-100 rounded-lg p-[2%] flex space-between gap-[15px]">
+                        <div><img class="rounded-[50%] w-[50px]" src="profile.jpg" alt=""></div>
+                        <div>
+                            <div>
+                                <p class="text-xl font-[600]">John Doe</p>
+                                <p>Welcome! You can reply to the comments. But you can't delete the initial comment.</p>
+                            </div>
+                            <div class="mt-[10px]">
+                                <button class="reply border-[1px] border-black rounded-[3px] px-[5px]">Reply</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- <div class="comment-details">
+                <div class="bg-gray-100 rounded-lg p-[2%] flex space-between gap-[15px]">
+                    <div><img class="rounded-[50%] w-[50px]" src="profile.jpg" alt=""></div>
+                    <div class="flex flex-col">
+                        <input id="user" class="rounded-none mb-[5%] p-[2%]" type="text" placeholder="Username" class="input" />
+                        <textarea maxlength="50" name="commentText" id="commentText" class="rounded-none mb-[5%] h-[50px] p-[2%]" type="text" placeholder="Add comment here"></textarea>
+                        <button class="btn my-[2%] submit">Post</button>
+                        <button class="btn my-[2%] cancel">Cancel</button>
+                    </div>
+                </div>
+            </div> -->
         </div>
     </section>
 </body>
+
 </html>
